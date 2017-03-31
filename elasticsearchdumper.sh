@@ -21,7 +21,7 @@ if [ $? -eq 0 ]
 	if [ $LINES -eq $LINESCURL ]
 	then
 		/usr/local/bin/curl -X POST http://YOUR-IP:9200/logstash-$EXPIREDATE/_close
-		/usr/local/bin/curl -X DELETE http://YOUR-IP:9200/logstash-$EXPIREDATE/_close
+		/usr/local/bin/curl -X DELETE http://YOUR-IP:9200/logstash-$EXPIREDATE
 			else
 		echo "Second condition went wrong"
 	fi
